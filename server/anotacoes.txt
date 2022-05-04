@@ -1,0 +1,70 @@
+/###############################################################################################/
+
+//Instalando o pacote do typescript e o ts-node-dev
+
+//ts-node-dev é um pacote semelhante ao nodemon do javaScript 
+//Observa as altertações do código e atualiza os dados do browser com as tipagens typescript
+
+Comando: yarn add typescript @types/node ts-node-dev -D
+
+/###############################################################################################/
+
+//npx tsc --init para criar o arquivo de configuração do typescript
+
+Comando: npx tsc --init
+
+/###############################################################################################/
+
+//Instalando o pacote do prisma e o prisma/client
+
+Comando: yarn add prisma -D
+Comando: yarn add @prisma/client
+
+//Criando a pasta prisma com o .env para configurações de ambiente
+
+Comando: npx prisma init
+
+/###############################################################################################/
+
+//@@map() ====> Altera o nome do conteúdo quando o prisma for criar a tabela no banco de dados
+//String? ====> ? Indica que o campo não é obrigatório
+//id String @id  ====> @id indica a primary key da tabela
+//id String @id @default(uuid()) ====> @default(uuid()) Cria um id unico seguro como se fosse um hash
+
+Como criar os dados da tabela : {
+
+    nomeDoCampo tipagemDoCampo
+
+    Ex: 
+    nomes String
+}
+
+/###############################################################################################/
+
+//Criando tabela pelo prisma
+model NomeTabela {
+  id String @id
+  type String
+  comment String
+  screenshot String?
+  @@map(novoNomeDaTabelaNoBanco)
+}
+
+//Rodar o comando "npx prisma migrate dev", após fazer toda a estrutura da tabela,
+para que ela seja criada no banco de dados.
+
+Comando : npx prisma migrate dev --> Após executar o comando, mande uma mensagem referente a suas altertações
+
+//Rodar o comando "npx prisma migrate deploy" para quando for fazer o deploy da aplicação
+
+Comando : npx prisma migrate deploy
+
+/###############################################################################################/
+
+//Para ver as tabelas criadas no prisma execute o comando "npx prisma studio", para abrir o prisma studio
+
+Comando: npx prisma studio
+
+/###############################################################################################/
+
+parei em 53:00 - dia 03
