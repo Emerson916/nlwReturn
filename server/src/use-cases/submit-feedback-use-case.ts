@@ -39,12 +39,15 @@ export class SubmitFeedbackUseCase {
 
       body: [
         `<html>`,
-        `<body style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #09090A">`,
+        `<body style="max-width: 800px; margin: 20px auto; padding: 20px;">`,
         `<h1 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif">Olá, agradecemos o envio do seu feedback</h1>`,
         `<p  style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #565656; font-weight: 700;"></p>`,
         `<p  style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #565656; font-weight: 700;">Iremos verificar o erro 😊</p>`,
         `<p  style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #565656; font-weight: 700;">${type}</p>`,
         `<p  style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #565656; font-weight: 700;">${comment}</p>`,
+        screenshot
+          ? `<img src="${screenshot}" />`
+          : ``,
         `</body>`,
         `</html>`,
       ].join("\n"),
