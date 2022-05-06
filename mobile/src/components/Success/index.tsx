@@ -5,13 +5,17 @@ import { theme } from "../../theme";
 import successImg from "../../assets/success.png";
 import Copyright from "../Copyright";
 
-function Success() {
+interface Props {
+  onSendAnotherFeedback: () => void;
+}
+
+function Success({ onSendAnotherFeedback }: Props) {
   return (
     <View style={styles.container}>
       <Image source={successImg} style={styles.image} />
       <Text style={styles.title}>Agradecemos o feedback</Text>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={onSendAnotherFeedback}>
         <Text style={styles.buttonTitle}>Quero enviar outro</Text>
       </TouchableOpacity>
 
