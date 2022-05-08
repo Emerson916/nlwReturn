@@ -5,7 +5,7 @@ import cors from "cors";
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: "https://nlwreturn-production-61af.up.railway.app/"
 }));
 app.use(express.json());
 app.use(router);
