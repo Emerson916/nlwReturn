@@ -33,7 +33,7 @@ mostrando o tipo do feedback a mensagem enviada e uma printScreen caso o usuári
 
 ## Veja o fluxo do projeto
 
-![image](https://user-images.githubusercontent.com/77053593/167401557-34e5dace-fd15-4480-a3dd-25c78e713962.png)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/77053593/167465920-cab8e114-bf3f-47ac-a8c5-28af81c9cc6e.gif)
 
 ### Ficou com alguma dúvida ?
 
