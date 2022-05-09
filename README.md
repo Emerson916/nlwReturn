@@ -11,6 +11,10 @@ Projeto simples, feito para aprender e aprimorar o uso de ferramentas como React
 Básicamente você consegue enviar feedbacks para a plataforma. Assim que o feedback for enviado, será recebido em um e-mail
 mostrando o tipo do feedback a mensagem enviada e uma printScreen caso o usuário tenha enviado.
  
+ ## Veja o fluxo do projeto
+ 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/77053593/167465920-cab8e114-bf3f-47ac-a8c5-28af81c9cc6e.gif)
+ 
 ## Baixe o Projeto em sua maquina
 👨‍🚀 ATENÇÃO: Para que a aplicação funcione em sua máquina localhost você precisa rodar o frontend e o backend 👨‍🚀
 ### 🖥️ Frontend
@@ -30,10 +34,6 @@ mostrando o tipo do feedback a mensagem enviada e uma printScreen caso o usuári
 * 1° De um "git clone https://github.com/Emerson916/nlwReturn/tree/main/mobile", no seu terminal
 * 2° Baixe as dependências rodando um "npm install", "yarn install" ou "expo install"
 * 3° Rode com "expo start" e escolha onde deseja visualizar o projeto (web, device, emulador).
-
-## Veja o fluxo do projeto
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/77053593/167465920-cab8e114-bf3f-47ac-a8c5-28af81c9cc6e.gif)
 
 ### Ficou com alguma dúvida ?
 
